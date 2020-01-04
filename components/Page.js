@@ -45,9 +45,12 @@ body{
   line-height: 2;
   font-family: 'radnika_next';
 }
-a{
+a, button{
   text-decoration: none;
   color: ${theme.black};
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: 'radnika_next';
 }
 `;
 
