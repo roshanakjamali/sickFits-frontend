@@ -70,3 +70,4 @@ class RemoveFromCart extends Component {
 }
 
 export default RemoveFromCart;
+export { REMOVE_FORM_CART_MUTATION };

@@ -25,10 +25,12 @@ class RequestReset extends Component {
       <Mutation
         mutation={REQUEST_RESET_MUTATION}
         variables={this.state}
-        refetchQueries={[{ query: CURRENT_USER_QUERY }]}
+        // refetchQueries={[{ query: CURRENT_USER_QUERY }]}
       >
         {(reset, { error, loading, called }) => (
           <Form
+            data-test="form"
+            method="post"
             onSubmit={async e => {
               e.preventDefault();
               await reset();
@@ -60,3 +62,4 @@ class RequestReset extends Component {
   }
 }
 export default RequestReset;
+export { REQUEST_RESET_MUTATION };
